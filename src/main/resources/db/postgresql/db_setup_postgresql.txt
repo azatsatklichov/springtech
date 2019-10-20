@@ -1,0 +1,14 @@
+1) Download and install the PostgreSQL database,
+   which can be found here: https://www.postgresql.org/download/
+
+
+2) Open psql and create the pandc database with user/pwd: postgres/postgress vi UI or just like below
+ 
+	CREATE DATABASE pandc
+  	WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       CONNECTION LIMIT = -1;
+
+3) Create the PetClinic tables by executing the "db/postgresql/initDB.sql".
+Then execute "db/postgresql/populateDB.sql" script.

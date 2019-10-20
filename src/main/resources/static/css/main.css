@@ -1,0 +1,17 @@
+body {
+	padding-top: 5rem;
+}
+
+.starter-template {
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+h1 {
+	color: #00FFFF;
+	background: green;	
+}
+
+h2 {
+	color: #FF0000;
+}
