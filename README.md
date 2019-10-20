@@ -79,6 +79,9 @@ https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api
 
 -- Config Properties in Spring
 https://www.baeldung.com/configuration-properties-in-spring-boot
+https://www.baeldung.com/spring-boot-application-configuration
+--Validation https://www.baeldung.com/javax-validation
+
  
 TODO BE
 -----

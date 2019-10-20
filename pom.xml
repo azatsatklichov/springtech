@@ -78,11 +78,11 @@
 			<!--<version>5.2.4</version>-->
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate.validator.version}</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- Thymeleaf -->
 		<dependency>
