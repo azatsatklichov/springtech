@@ -1,6 +1,6 @@
 package net.sahet.springtech.config;
 
-import net.sahet.springtech.dto.Item;
+import net.sahet.springtech.web.dto.Item;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

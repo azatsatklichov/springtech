@@ -1,4 +1,4 @@
-package net.sahet.springtech.controller;
+package net.sahet.springtech.web.controller;
 
 import net.sahet.springtech.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;

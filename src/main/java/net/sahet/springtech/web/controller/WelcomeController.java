@@ -1,4 +1,4 @@
-package net.sahet.springtech.controller;
+package net.sahet.springtech.web.controller;
 
 import java.util.Arrays;
 import java.util.List;

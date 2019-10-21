@@ -2,8 +2,8 @@ package net.sahet.springtech;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import net.sahet.springtech.dto.RateRequest;
-import net.sahet.springtech.dto.RateResponse;
+import net.sahet.springtech.web.dto.RateRequest;
+import net.sahet.springtech.web.dto.RateResponse;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.http.*;

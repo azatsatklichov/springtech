@@ -1,6 +1,6 @@
 package net.sahet.springtech.config;
 
-import net.sahet.springtech.dto.Employee;
+import net.sahet.springtech.web.dto.Employee;
 import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

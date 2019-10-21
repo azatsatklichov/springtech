@@ -1,7 +1,7 @@
 package net.sahet.springtech.config;
 
 import lombok.Data;
-import net.sahet.springtech.dto.Employee;
+import net.sahet.springtech.web.dto.Employee;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.convert.DataSizeUnit;
 import org.springframework.boot.convert.DurationUnit;

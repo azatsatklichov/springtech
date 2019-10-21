@@ -1,4 +1,4 @@
-package net.sahet.springtech.dto;
+package net.sahet.springtech.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -3,7 +3,7 @@ package net.sahet.springtech.config;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import net.sahet.springtech.dto.Credentials;
+import net.sahet.springtech.web.dto.Credentials;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
