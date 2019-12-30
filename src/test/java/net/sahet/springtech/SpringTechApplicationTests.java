@@ -1,7 +1,5 @@
 package net.sahet.springtech;
 
-import net.sahet.springtech.web.dto.RateRequest;
-import net.sahet.springtech.web.dto.RateResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +14,5 @@ public class SpringTechApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
-
 
 }

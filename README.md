@@ -1,10 +1,8 @@
 # spring tech 
 
-- For incremental development  
+- For incremental development using springboot technologies, and applying 12factor principles to the project  
 
 ## Requirements:
-
-Before start install these tools
 
 - Eclipse or Intellij IDEA
 - JDK 1.8 or later welcome
@@ -23,8 +21,9 @@ Just in command line run below command
 > run.bat
  
 
-To test API either use Browser-Swagger, Postman REST client, IntelliJ http-client,  or JUnit  
------------------
+## Testing 
+
+To test API, use either Browser-Swagger, Postman REST client, IntelliJ http-client in scratches,  or JUnit
 
 A. Test on browser
 
@@ -51,49 +50,25 @@ BODY
 
 D. IntelliJ Scratches
 
-See docs/ directory 
-
-
-E. JUnit tests - https://www.baeldung.com/rest-template
-
-run: RestTemplateClient
+See scratches directory 
    
 
-DONE
------
--Spring Boot project creation
--lombok
--JSON
--REST API
--Swagger, Postman, IntelliJ http client, Spring REST clients
--JPA/JPS Data Integration
-
+## Integrated 
+ 
+- Spring Boot project 
+- Thymeleaf
+- Lombok
+- JSON
+- REST API
+- Swagger, Postman, IntelliJ http client, Spring REST clients
+- JPA/JPS Data Integration
 - Flyway
-https://hellokoding.com/database-migration-evolution-with-flyway-and-jpa-hibernate/
-https://www.baeldung.com/database-migrations-with-flyway
-https://www.tutorialspoint.com/spring_boot/spring_boot_flyway_database.htm
-https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/
-id-issue
-https://stackoverflow.com/questions/39855979/jpa-schema-validation-with-postgresql-9-5
-https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/
-
--- Config Properties in Spring
-https://www.baeldung.com/configuration-properties-in-spring-boot
-https://www.baeldung.com/spring-boot-application-configuration
---Validation https://www.baeldung.com/javax-validation
+- Config Properties
 
  
-TODO BE
------
--Thymeleaf
--PDF
--Mail services
--Properties with Spring and Spring Boot - https://www.baeldung.com/properties-with-spring 
+## TO BE
  
-TODO FE
------
-Angular/TS client 
-Node.js 
-Mongo DB 
-
- 
+- PDF
+- Mail services 
+- Messaging
+- Security
