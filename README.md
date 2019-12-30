@@ -1,13 +1,13 @@
 # spring tech 
 
-- For incremental development using springboot technologies, and applying 12factor principles to the project  
+- For incremental development using spring-boot technologies, and applying 12factor principles to the project  
 
 ## Requirements:
 
 - Eclipse or Intellij IDEA
 - JDK 1.8 or later welcome
 - Maven
-- Install PostgresSQL database, and create Db "pandc" with user/pwd: postgres/postgres and follow db/postgresql
+- Install PostgresSQL database, and create Db "springtech" with user/pwd: postgres/postgres and follow db/postgresql
   PostgreSQL(e.g. version 11.3,  pgAdmin 4) 
 - embedded Tomcat provided by Spring Boot, but welcome to change it to Jetty or etc.
 - Extract FakeSMTP server under docs folder and just run it before tryin mail-services
