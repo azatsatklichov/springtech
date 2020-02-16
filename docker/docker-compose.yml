@@ -1,11 +1,20 @@
+# 1. Firstly, in root folder just create an image 
+# > docker build -t asatklichov/springtech .
+# 2. in docker folder just use docker-compose file to run the app
+# > docker-compose build
+# > docker-compose up
+
+
 version: '2'
 services:
 
   springtech:
-    #dockerfile: Dockerfile
+    #build:
+    #  context: .
+    #  dockerfile: ../Dockerfile
     image: asatklichov/springtech
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/springtech
+    #environment:
+    #  - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/springtech
     ports:
       - "9999:9999"
     depends_on:
@@ -20,6 +29,7 @@ services:
     environment:
      - POSTGRES_USER=postgres
      - POSTGRES_PASSWORD=postgres
+     - POSTGRES_DB=springtech
     ports:
      - "5435:5432"
     #networks:

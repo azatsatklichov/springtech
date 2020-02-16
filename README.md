@@ -12,6 +12,7 @@
 - embedded Tomcat provided by Spring Boot, but welcome to change it to Jetty or etc.
 - Extract FakeSMTP server under docs folder and just run it before tryin mail-services
 
+
 ## Install the project and surroundings:
 
     git clone https://github.com/azatsatklichov/springtech.git
@@ -20,6 +21,9 @@
 Just in command line run below command
 > run.bat
  
+
+## Or you can run the application via docker container  
+Please, look the instructions in docker-compose.yml 
 
 ## Testing 
 
