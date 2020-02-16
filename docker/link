@@ -1,1 +1,7 @@
+
+-- just like in outr project
 https://spring.io/guides/gs/spring-boot-docker/
+
+
+--if you like to generate image via maven plugin 
+https://github.com/jirkapinkas/spring-boot-postgresql-docker-compose

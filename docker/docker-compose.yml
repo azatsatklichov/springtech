@@ -13,6 +13,7 @@ services:
     #  context: .
     #  dockerfile: ../Dockerfile
     image: asatklichov/springtech
+    build: ./
     #environment:
     #  - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/springtech
     ports:
@@ -32,8 +33,13 @@ services:
      - POSTGRES_DB=springtech
     ports:
      - "5435:5432"
+    #volumes:
+    # - sample_db:/var/lib/postgresql/data
     #networks:
     # - my_isolated_net2
+    
+  #volumes:
+  # sample_db:
 
   #networks:
   # my_isolated_net2:
