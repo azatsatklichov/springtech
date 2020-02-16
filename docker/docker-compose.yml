@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+  springtech:
+    dockerfile: Dockerfile
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/springtech
+    ports:
+      - 9999:9999
+    depends_on:
+      - springtech-postgresql
+      
+  springtech-postgresql:
+      extends:
+        file: postgresql.yml
+        service: springtech-postgresql
+
+  networks:
+     my_isolated_net:
+      driver: bridge        
+  

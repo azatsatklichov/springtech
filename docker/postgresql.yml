@@ -1,0 +1,11 @@
+version: '2'
+services:
+    springtech-postgresql:
+        image: postgres:11.4-alpine
+        # volumes:
+        #     - ~/volumes/valo/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - 5435:5432
