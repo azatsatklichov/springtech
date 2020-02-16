@@ -1,5 +1,6 @@
 # 1. Firstly, in root folder just create an image 
 # > docker build -t asatklichov/springtech .
+# > docker push  asatklichov/springtech
 # 2. in docker folder just use docker-compose file to run the app
 # > docker-compose build
 # > docker-compose up
