@@ -2,20 +2,30 @@ version: '2'
 services:
 
   springtech:
-    dockerfile: Dockerfile
+    #dockerfile: Dockerfile
+    image: asatklichov/springtech
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/springtech
     ports:
-      - 9999:9999
+      - "9999:9999"
     depends_on:
       - springtech-postgresql
+    #networks:
+    #  - my_isolated_net2
       
   springtech-postgresql:
-      extends:
-        file: postgresql.yml
-        service: springtech-postgresql
+    image: postgres:11.4-alpine
+    # volumes:
+    # - ~/volumes/valo/postgresql/:/var/lib/postgresql/data/
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+    ports:
+     - "5435:5432"
+    #networks:
+    # - my_isolated_net2
 
-  networks:
-     my_isolated_net:
-      driver: bridge        
+  #networks:
+  # my_isolated_net2:
+  #  driver: bridge        
   
