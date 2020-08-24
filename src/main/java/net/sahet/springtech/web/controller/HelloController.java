@@ -22,13 +22,8 @@ public class HelloController {
         return modelAndView;
     }
 
-    ;
-
     @GetMapping(value = "/getAllBooks")
     public String getAllBooks() {
         return "Hi Book. All Java books are here: " + bookService.getAllBooks("Java");
     }
-
-    ;
-
 }

@@ -1,5 +1,8 @@
-package net.sahet.springtech.exception;
+package net.sahet.springtech.advice;
 
+import net.sahet.springtech.exception.Error;
+import net.sahet.springtech.exception.RateNotFoundException;
+import net.sahet.springtech.exception.RequestValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -7,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
-public class RateExceptionController {
+public class ExceptionControllerAdvice {
 
     @ExceptionHandler(value = RateNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
