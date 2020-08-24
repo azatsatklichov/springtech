@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 public class RestTemplateClient {
 
-    public static final String VATINFO_URI = "http://localhost:9999/api/rate";
+    public static final String VATINFO_URI = "http://localhost:9999/hello/book";
 
     @Test
     public void testRates() throws JsonProcessingException {
@@ -32,7 +32,7 @@ public class RestTemplateClient {
 		/*restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
 		restTemplate.getMessageConverters().add(new StringHttpMessageConverter());*/
 
-        ResponseEntity<RateResponse> rateResponse = restTemplate.exchange(VATINFO_URI, HttpMethod.POST,
+        ResponseEntity<RateResponse> rateResponse = restTemplate.exchange(VATINFO_URI, HttpMethod.GET,
                 requestEntity, RateResponse.class);
 
         RateResponse rates = rateResponse.getBody();
