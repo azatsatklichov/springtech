@@ -1,13 +1,14 @@
 package net.sahet.springtech.advice;
 
-import net.sahet.springtech.exception.Error;
-import net.sahet.springtech.exception.RateNotFoundException;
-import net.sahet.springtech.exception.RequestValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
+
+import net.sahet.springtech.exception.Error;
+import net.sahet.springtech.exception.RateNotFoundException;
+import net.sahet.springtech.exception.RequestValidationException;
 
 @ControllerAdvice
 public class ExceptionControllerAdvice {

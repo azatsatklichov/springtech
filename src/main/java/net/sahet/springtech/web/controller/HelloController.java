@@ -18,7 +18,7 @@ public class HelloController {
     public ModelAndView hiBook() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("book");
-        modelAndView.addObject("books", "Hi Book. You like: " + bookService.getBookById(1));
+        modelAndView.addObject("books", "Hi Book!!! Book category: " + bookService.getBookById(1));
         return modelAndView;
     }
 

@@ -13,15 +13,17 @@ import java.util.Optional;
 @Slf4j
 public class BookService {
 
-    @Autowired
-    private BookRepository repository;
+	@Autowired
+	private BookRepository repository;
 
-    public String getBookById(long id) {
-        Optional<Book> bookById = repository.findById(id);
-        return bookById.isPresent()? bookById.get().getName() : "";
-    }
+	public String getBookById(long id) {
+		log.debug("getBookById: " + id);
+		Optional<Book> bookById = repository.findById(id);
+		return bookById.isPresent() ? bookById.get().getName() : "";
+	}
 
-    public List<Book> getAllBooks(String name) {
-        return repository.findByName(name);
-    }
+	public List<Book> getAllBooks(String name) {
+		log.debug("getAllBooks by name: " + name);
+		return repository.findByName(name);
+	}
 }
