@@ -76,3 +76,8 @@ See scratches directory
 - Mail services 
 - Messaging
 - Security
+
+## VAT
+-  https://euvatrates.com/
+-  https://raw.githubusercontent.com/ibericode/vat-rates/master/vat-rates.json
+- old: http://jsonvat.com/

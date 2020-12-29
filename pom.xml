@@ -21,7 +21,7 @@
 		<swagger.version>2.9.2</swagger.version>
 		<bootstrap.version>4.2.1</bootstrap.version>
 		<hibernate.validator.version>6.0.16.Final</hibernate.validator.version>
-	<version></version>
+		<version></version>
 	</properties>
 
 	<dependencies>
@@ -47,6 +47,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+	<!-- 	<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>2.10.3</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
 
 		<dependency>
@@ -80,14 +94,11 @@
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-			<!--<version>5.2.4</version>-->
+			<!--<version>5.2.4</version> -->
 		</dependency>
 
-		<!--<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>${hibernate.validator.version}</version>
-		</dependency>-->
+		<!--<dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator</artifactId> 
+			<version>${hibernate.validator.version}</version> </dependency> -->
 
 		<!-- Thymeleaf -->
 		<dependency>
@@ -113,10 +124,8 @@
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>4.0.3</version>
-				<!--<configuration>
-					<user>databaseUser</user>
-					<password>databasePassword</password>
-				</configuration>-->
+				<!--<configuration> <user>databaseUser</user> <password>databasePassword</password> 
+					</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
