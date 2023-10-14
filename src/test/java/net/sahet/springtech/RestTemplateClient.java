@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 
+//to run this test, server-must be running 
 public class RestTemplateClient {
 
     public static final String VATINFO_URI = "http://localhost:9999/hello/book";

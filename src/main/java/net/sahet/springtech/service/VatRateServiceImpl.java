@@ -32,9 +32,8 @@ public class VatRateServiceImpl implements VatRateService {
 		if (rates == null) {
 			return Collections.emptyList();
 		}
-		
 
-		log.info("Vat rates are under being processed"); 
+		log.info("Vat rates are under being processed");
 
 		if (count < rates.size()) {
 			if (highestVat) {
@@ -46,7 +45,6 @@ public class VatRateServiceImpl implements VatRateService {
 						.limit(count).map(Rate::getName).collect(Collectors.toList());
 			}
 		}
-
 
 		return rates.stream().map(Rate::getName).collect(Collectors.toList());
 	}

@@ -124,6 +124,7 @@
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>4.0.3</version>
+				<!-- https://www.baeldung.com/database-migrations-with-flyway -->
 				<!--<configuration> <user>databaseUser</user> <password>databasePassword</password> 
 					</configuration> -->
 			</plugin>
