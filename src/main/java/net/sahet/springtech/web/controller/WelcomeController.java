@@ -26,7 +26,7 @@ public class WelcomeController {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "home";
+		return "oy";
 	}
 
 	@RequestMapping(value = "/save", method = RequestMethod.POST)

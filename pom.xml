@@ -21,78 +21,121 @@
 		<swagger.version>2.9.2</swagger.version>
 		<bootstrap.version>4.2.1</bootstrap.version>
 		<hibernate.validator.version>6.0.16.Final</hibernate.validator.version>
-		<version></version>
+
+		<project.build.sourceEncoding>
+			UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>
+			UTF-8</project.reporting.outputEncoding>
 	</properties>
 
 	<dependencies>
-		<!-- devtools helps to disable the caches and enable hot swapping so that 
-			developers will always see the last changes. -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
-		</dependency>
 
+	  <!--https://www.javatpoint.com/spring-boot-starters-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- devtools helps to disable the caches and enable hot swapping so
+		that 
+			developers will always see the last changes. -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<groupId>
+				org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>
+				true</optional>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>
+				spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>
+				test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>
+				selenium-java</artifactId>
 			<scope>test</scope>
 		</dependency>
 
-	<!-- 	<dependency>
+		<dependency>
+			<groupId>
+				org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<scope>
+				test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>
+				spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!-- 	<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<version>2.10.3</version>
+		<artifactId>jackson-dataformat-xml</artifactId>
+		<version>2.10.3</version>
 		</dependency> -->
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
+			<groupId>
+				com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
+			<groupId>
+				com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.projectlombok</groupId>
+			<groupId>
+				org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>io.springfox</groupId>
+			<groupId>
+				io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>${swagger.version}</version>
+			<version>
+				${swagger.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
+			<artifactId>
+				springfox-swagger-ui</artifactId>
 			<version>${swagger.version}</version>
 		</dependency>
 
 		<!-- Hikary CP, jpa, crud repository -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.postgresql</groupId>
+			<groupId>
+				org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.flywaydb</groupId>
+			<groupId>
+				org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 			<!--<version>5.2.4</version> -->
 		</dependency>
@@ -102,12 +145,14 @@
 
 		<!-- Thymeleaf -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<!-- Optional, for bootstrap -->
 		<dependency>
-			<groupId>org.webjars</groupId>
+			<groupId>
+				org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>${bootstrap.version}</version>
 		</dependency>
