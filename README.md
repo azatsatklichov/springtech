@@ -68,6 +68,7 @@ See scratches directory
 - JPA/JPS Data Integration
 - Flyway
 - Config Properties
+- Spring Test with Selenium
 
  
 ## TO BE
